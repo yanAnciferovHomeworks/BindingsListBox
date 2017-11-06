@@ -7,3 +7,13 @@ c:\users\anci_oq88\documents\visual studio 2015\Projects\BindingsListBox\Binding
 c:\users\anci_oq88\documents\visual studio 2015\Projects\BindingsListBox\BindingsListBox\obj\Debug\BindingsListBox.csproj.GenerateResource.Cache
 c:\users\anci_oq88\documents\visual studio 2015\Projects\BindingsListBox\BindingsListBox\obj\Debug\BindingsListBox.exe
 c:\users\anci_oq88\documents\visual studio 2015\Projects\BindingsListBox\BindingsListBox\obj\Debug\BindingsListBox.pdb
+C:\Users\Yan\Desktop\Новая папка\BindingsListBox\BindingsListBox\bin\Debug\BindingsListBox.exe.config
+C:\Users\Yan\Desktop\Новая папка\BindingsListBox\BindingsListBox\bin\Debug\BindingsListBox.exe
+C:\Users\Yan\Desktop\Новая папка\BindingsListBox\BindingsListBox\bin\Debug\BindingsListBox.pdb
+C:\Users\Yan\Desktop\Новая папка\BindingsListBox\BindingsListBox\obj\Debug\BindingsListBox.csprojResolveAssemblyReference.cache
+C:\Users\Yan\Desktop\Новая папка\BindingsListBox\BindingsListBox\obj\Debug\BindingsListBox.Form1.resources
+C:\Users\Yan\Desktop\Новая папка\BindingsListBox\BindingsListBox\obj\Debug\BindingsListBox.Properties.Resources.resources
+C:\Users\Yan\Desktop\Новая папка\BindingsListBox\BindingsListBox\obj\Debug\BindingsListBox.csproj.GenerateResource.Cache
+C:\Users\Yan\Desktop\Новая папка\BindingsListBox\BindingsListBox\obj\Debug\BindingsListBox.csproj.CoreCompileInputs.cache
+C:\Users\Yan\Desktop\Новая папка\BindingsListBox\BindingsListBox\obj\Debug\BindingsListBox.exe
+C:\Users\Yan\Desktop\Новая папка\BindingsListBox\BindingsListBox\obj\Debug\BindingsListBox.pdb

@@ -14,5 +14,10 @@ namespace BindingsListBox
 
         public int Year { get; set; }
 
+        public override string ToString()
+        {
+            return Name;
+        }
+
     }
 }

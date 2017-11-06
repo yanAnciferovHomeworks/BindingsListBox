@@ -33,14 +33,14 @@
             this.Add = new System.Windows.Forms.Button();
             this.Edit = new System.Windows.Forms.Button();
             this.FilmInfo = new System.Windows.Forms.GroupBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.button5 = new System.Windows.Forms.Button();
+            this.button4 = new System.Windows.Forms.Button();
+            this.FilmYear = new System.Windows.Forms.ComboBox();
+            this.FilmDescr = new System.Windows.Forms.TextBox();
+            this.FilmName = new System.Windows.Forms.TextBox();
             this.FilmInfo.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -61,6 +61,7 @@
             this.Del.TabIndex = 3;
             this.Del.Text = "Удалить";
             this.Del.UseVisualStyleBackColor = true;
+            this.Del.Click += new System.EventHandler(this.Del_Click);
             // 
             // Add
             // 
@@ -81,6 +82,7 @@
             this.Edit.TabIndex = 2;
             this.Edit.Text = "Редактировать";
             this.Edit.UseVisualStyleBackColor = true;
+            this.Edit.Click += new System.EventHandler(this.Edit_Click);
             // 
             // FilmInfo
             // 
@@ -89,9 +91,9 @@
             this.FilmInfo.Controls.Add(this.label1);
             this.FilmInfo.Controls.Add(this.button5);
             this.FilmInfo.Controls.Add(this.button4);
-            this.FilmInfo.Controls.Add(this.comboBox1);
-            this.FilmInfo.Controls.Add(this.textBox2);
-            this.FilmInfo.Controls.Add(this.textBox1);
+            this.FilmInfo.Controls.Add(this.FilmYear);
+            this.FilmInfo.Controls.Add(this.FilmDescr);
+            this.FilmInfo.Controls.Add(this.FilmName);
             this.FilmInfo.Enabled = false;
             this.FilmInfo.Location = new System.Drawing.Point(245, 43);
             this.FilmInfo.Name = "FilmInfo";
@@ -99,28 +101,42 @@
             this.FilmInfo.TabIndex = 4;
             this.FilmInfo.TabStop = false;
             // 
-            // textBox1
+            // label3
             // 
-            this.textBox1.Location = new System.Drawing.Point(19, 29);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(289, 20);
-            this.textBox1.TabIndex = 0;
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(18, 96);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(57, 13);
+            this.label3.TabIndex = 7;
+            this.label3.Text = "Описание";
             // 
-            // textBox2
+            // label2
             // 
-            this.textBox2.Location = new System.Drawing.Point(19, 110);
-            this.textBox2.Multiline = true;
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(289, 107);
-            this.textBox2.TabIndex = 1;
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(17, 57);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(25, 13);
+            this.label2.TabIndex = 6;
+            this.label2.Text = "Год";
             // 
-            // comboBox1
+            // label1
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(19, 71);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(121, 21);
-            this.comboBox1.TabIndex = 2;
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(16, 15);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(100, 13);
+            this.label1.TabIndex = 5;
+            this.label1.Text = "Название фильма";
+            // 
+            // button5
+            // 
+            this.button5.Location = new System.Drawing.Point(159, 234);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(75, 23);
+            this.button5.TabIndex = 4;
+            this.button5.Text = "OK";
+            this.button5.UseVisualStyleBackColor = true;
+            this.button5.Click += new System.EventHandler(this.button5_Click);
             // 
             // button4
             // 
@@ -132,41 +148,29 @@
             this.button4.UseVisualStyleBackColor = true;
             this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
-            // button5
+            // FilmYear
             // 
-            this.button5.Location = new System.Drawing.Point(159, 234);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(75, 23);
-            this.button5.TabIndex = 4;
-            this.button5.Text = "OK";
-            this.button5.UseVisualStyleBackColor = true;
+            this.FilmYear.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.FilmYear.FormattingEnabled = true;
+            this.FilmYear.Location = new System.Drawing.Point(19, 71);
+            this.FilmYear.Name = "FilmYear";
+            this.FilmYear.Size = new System.Drawing.Size(121, 21);
+            this.FilmYear.TabIndex = 2;
             // 
-            // label1
+            // FilmDescr
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(16, 15);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(100, 13);
-            this.label1.TabIndex = 5;
-            this.label1.Text = "Название фильма";
+            this.FilmDescr.Location = new System.Drawing.Point(19, 110);
+            this.FilmDescr.Multiline = true;
+            this.FilmDescr.Name = "FilmDescr";
+            this.FilmDescr.Size = new System.Drawing.Size(289, 107);
+            this.FilmDescr.TabIndex = 1;
             // 
-            // label2
+            // FilmName
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(17, 57);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(25, 13);
-            this.label2.TabIndex = 6;
-            this.label2.Text = "Год";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(18, 96);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(57, 13);
-            this.label3.TabIndex = 7;
-            this.label3.Text = "Описание";
+            this.FilmName.Location = new System.Drawing.Point(19, 29);
+            this.FilmName.Name = "FilmName";
+            this.FilmName.Size = new System.Drawing.Size(289, 20);
+            this.FilmName.TabIndex = 0;
             // 
             // Form1
             // 
@@ -198,9 +202,9 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button button5;
         private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.ComboBox FilmYear;
+        private System.Windows.Forms.TextBox FilmDescr;
+        private System.Windows.Forms.TextBox FilmName;
     }
 }
 
