@@ -8,7 +8,7 @@ using MVC.Models;
 
 namespace MVC.Views
 {
-    interface IStudentsView
+    public interface IStudentsView
     {
         void AddStudentToList(Student student);
         void RemoveStudentFromList(Student student);
@@ -19,9 +19,13 @@ namespace MVC.Views
         void ClearList();
         void UpadateList(IEnumerable<Student> students);
 
+
+    }
+
+    public interface IStudentInfoView
+    {
         string FirstName { get; set; }
         string LastName { get; set; }
         string Group { get; set; }
-
     }
 }

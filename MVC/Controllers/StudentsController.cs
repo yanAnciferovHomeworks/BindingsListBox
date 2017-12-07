@@ -9,7 +9,7 @@ using MVC.Views;
 
 namespace MVC.Controllers
 {
-    class StudentsController : IStudentsController
+    public class StudentsController : IStudentsController
     {
         IStudentsView _view;
         public StudentsController(IStudentsView view)
@@ -25,17 +25,14 @@ namespace MVC.Controllers
 
         public void AddStudent()
         {
-
-            var student = new Student
+            var newStudent = new Student();
+            StudentWindow studInfoView = new StudentWindow(newStudent);
+            
+            if (studInfoView.ShowDialog() == System.Windows.Forms.DialogResult.OK)
             {
-                FirstName = _view.FirstName,
-                LastName = _view.LastName,
-                Group = _view.Group
-            };
-
-            academy.AddStudent(student);
-
-            _view.AddStudentToList(student);
+                academy.AddStudent(newStudent);
+                _view.AddStudentToList(newStudent);
+            }
         }
 
         public void RemoveStudent()
@@ -47,9 +44,11 @@ namespace MVC.Controllers
         public void UpdateStudent()
         {
             var SelStud = (Student)_view.SelectedStudent();
-            SelStud.FirstName = _view.FirstName;
-            SelStud.LastName = _view.LastName;
-            SelStud.Group = _view.Group;
+            StudentWindow studInfoView = new StudentWindow(SelStud);
+            if (studInfoView.ShowDialog() == System.Windows.Forms.DialogResult.OK)
+            {
+
+            }
         }
     }
 }
