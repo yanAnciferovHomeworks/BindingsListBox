@@ -1,0 +1,10 @@
+C:\Users\Yan\source\repos\GraphicQuest\GraphicQuest\bin\Debug\GraphicQuest.exe.config
+C:\Users\Yan\source\repos\GraphicQuest\GraphicQuest\bin\Debug\GraphicQuest.exe
+C:\Users\Yan\source\repos\GraphicQuest\GraphicQuest\bin\Debug\GraphicQuest.pdb
+C:\Users\Yan\source\repos\GraphicQuest\GraphicQuest\obj\Debug\GraphicQuest.csprojResolveAssemblyReference.cache
+C:\Users\Yan\source\repos\GraphicQuest\GraphicQuest\obj\Debug\GraphicQuest.Form1.resources
+C:\Users\Yan\source\repos\GraphicQuest\GraphicQuest\obj\Debug\GraphicQuest.Properties.Resources.resources
+C:\Users\Yan\source\repos\GraphicQuest\GraphicQuest\obj\Debug\GraphicQuest.csproj.GenerateResource.Cache
+C:\Users\Yan\source\repos\GraphicQuest\GraphicQuest\obj\Debug\GraphicQuest.csproj.CoreCompileInputs.cache
+C:\Users\Yan\source\repos\GraphicQuest\GraphicQuest\obj\Debug\GraphicQuest.exe
+C:\Users\Yan\source\repos\GraphicQuest\GraphicQuest\obj\Debug\GraphicQuest.pdb
