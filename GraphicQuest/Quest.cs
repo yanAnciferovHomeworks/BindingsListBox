@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace GraphicQuest
 {
-    class Quest
+    public class Quest
     {
         public string Name { get; set; }
 
