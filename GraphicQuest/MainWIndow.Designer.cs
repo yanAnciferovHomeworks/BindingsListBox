@@ -33,10 +33,11 @@
             this.delete = new System.Windows.Forms.Button();
             this.ShowRating = new System.Windows.Forms.CheckBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.nameBox = new System.Windows.Forms.TextBox();
-            this.ratingBox = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.ratingBox = new System.Windows.Forms.TextBox();
+            this.nameBox = new System.Windows.Forms.TextBox();
+            this.Print = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -51,7 +52,7 @@
             // 
             // add
             // 
-            this.add.Location = new System.Drawing.Point(196, 186);
+            this.add.Location = new System.Drawing.Point(196, 165);
             this.add.Name = "add";
             this.add.Size = new System.Drawing.Size(75, 23);
             this.add.TabIndex = 1;
@@ -61,7 +62,7 @@
             // 
             // delete
             // 
-            this.delete.Location = new System.Drawing.Point(196, 215);
+            this.delete.Location = new System.Drawing.Point(196, 194);
             this.delete.Name = "delete";
             this.delete.Size = new System.Drawing.Size(75, 23);
             this.delete.TabIndex = 2;
@@ -88,34 +89,10 @@
             this.groupBox1.Controls.Add(this.nameBox);
             this.groupBox1.Location = new System.Drawing.Point(190, 13);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(129, 157);
+            this.groupBox1.Size = new System.Drawing.Size(129, 136);
             this.groupBox1.TabIndex = 4;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Новый квест";
-            // 
-            // nameBox
-            // 
-            this.nameBox.Location = new System.Drawing.Point(9, 43);
-            this.nameBox.Name = "nameBox";
-            this.nameBox.Size = new System.Drawing.Size(100, 20);
-            this.nameBox.TabIndex = 0;
-            // 
-            // ratingBox
-            // 
-            this.ratingBox.Location = new System.Drawing.Point(9, 92);
-            this.ratingBox.Name = "ratingBox";
-            this.ratingBox.Size = new System.Drawing.Size(100, 20);
-            this.ratingBox.TabIndex = 1;
-            this.ratingBox.Validating += new System.ComponentModel.CancelEventHandler(this.ratingBox_Validating);
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(8, 27);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(35, 13);
-            this.label1.TabIndex = 2;
-            this.label1.Text = "Name";
             // 
             // label2
             // 
@@ -126,11 +103,47 @@
             this.label2.TabIndex = 3;
             this.label2.Text = "Rating";
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(8, 27);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(35, 13);
+            this.label1.TabIndex = 2;
+            this.label1.Text = "Name";
+            // 
+            // ratingBox
+            // 
+            this.ratingBox.Location = new System.Drawing.Point(9, 92);
+            this.ratingBox.Name = "ratingBox";
+            this.ratingBox.Size = new System.Drawing.Size(100, 20);
+            this.ratingBox.TabIndex = 1;
+            this.ratingBox.Validating += new System.ComponentModel.CancelEventHandler(this.ratingBox_Validating);
+            // 
+            // nameBox
+            // 
+            this.nameBox.Location = new System.Drawing.Point(9, 43);
+            this.nameBox.Name = "nameBox";
+            this.nameBox.Size = new System.Drawing.Size(100, 20);
+            this.nameBox.TabIndex = 0;
+            // 
+            // Print
+            // 
+            this.Print.Enabled = false;
+            this.Print.Location = new System.Drawing.Point(196, 228);
+            this.Print.Name = "Print";
+            this.Print.Size = new System.Drawing.Size(75, 23);
+            this.Print.TabIndex = 5;
+            this.Print.Text = "Печать";
+            this.Print.UseVisualStyleBackColor = true;
+            this.Print.Click += new System.EventHandler(this.Print_Click);
+            // 
             // MainWIndow
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(331, 284);
+            this.Controls.Add(this.Print);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.ShowRating);
             this.Controls.Add(this.delete);
@@ -157,5 +170,6 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox ratingBox;
         private System.Windows.Forms.TextBox nameBox;
+        private System.Windows.Forms.Button Print;
     }
 }

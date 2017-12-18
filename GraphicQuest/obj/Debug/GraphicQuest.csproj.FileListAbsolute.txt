@@ -18,3 +18,14 @@ C:\Users\anci_oq88\Desktop\Новая папка\BindingsListBox\GraphicQuest\ob
 C:\Users\anci_oq88\Desktop\Новая папка\BindingsListBox\GraphicQuest\obj\Debug\GraphicQuest.exe
 C:\Users\anci_oq88\Desktop\Новая папка\BindingsListBox\GraphicQuest\obj\Debug\GraphicQuest.pdb
 C:\Users\anci_oq88\Desktop\Новая папка\BindingsListBox\GraphicQuest\obj\Debug\GraphicQuest.MainWIndow.resources
+C:\Users\Asus\Desktop\BindingsListBox\GraphicQuest\bin\Debug\GraphicQuest.exe.config
+C:\Users\Asus\Desktop\BindingsListBox\GraphicQuest\bin\Debug\GraphicQuest.exe
+C:\Users\Asus\Desktop\BindingsListBox\GraphicQuest\bin\Debug\GraphicQuest.pdb
+C:\Users\Asus\Desktop\BindingsListBox\GraphicQuest\obj\Debug\GraphicQuest.csprojResolveAssemblyReference.cache
+C:\Users\Asus\Desktop\BindingsListBox\GraphicQuest\obj\Debug\GraphicQuest.Form1.resources
+C:\Users\Asus\Desktop\BindingsListBox\GraphicQuest\obj\Debug\GraphicQuest.MainWIndow.resources
+C:\Users\Asus\Desktop\BindingsListBox\GraphicQuest\obj\Debug\GraphicQuest.Properties.Resources.resources
+C:\Users\Asus\Desktop\BindingsListBox\GraphicQuest\obj\Debug\GraphicQuest.csproj.GenerateResource.Cache
+C:\Users\Asus\Desktop\BindingsListBox\GraphicQuest\obj\Debug\GraphicQuest.csproj.CoreCompileInputs.cache
+C:\Users\Asus\Desktop\BindingsListBox\GraphicQuest\obj\Debug\GraphicQuest.exe
+C:\Users\Asus\Desktop\BindingsListBox\GraphicQuest\obj\Debug\GraphicQuest.pdb

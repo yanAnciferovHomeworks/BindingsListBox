@@ -31,11 +31,13 @@ namespace GraphicQuest
         {
             ShowRating.Checked = false;
             e.Cancel = true;
+            Print.Enabled = false;
         }
 
         private void ShowRating_CheckedChanged(object sender, EventArgs e)
         {
             rating.Visible = ShowRating.Checked;
+            Print.Enabled = rating.Visible;
         }
 
         private void add_Click(object sender, EventArgs e)
@@ -132,6 +134,11 @@ namespace GraphicQuest
             {
                 add.Enabled = false;
             }
+        }
+
+        private void Print_Click(object sender, EventArgs e)
+        {
+            rating.Print();
         }
     }
 }

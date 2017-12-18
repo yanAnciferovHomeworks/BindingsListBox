@@ -27,6 +27,25 @@ namespace GraphicQuest
             Form1_Resize(null, null);
         }
 
+        public void Print()
+        {
+            SaveFileDialog save = new SaveFileDialog();
+            save.Filter = "Форматы изображений | (*.png;*.jpeg;*.git;*.bmp)";
+            if (save.ShowDialog() == DialogResult.OK)
+            {
+                try
+                {
+                    img.Save(save.FileName);
+                    MessageBox.Show("Изображение сохранено!");
+                }
+                catch (Exception)
+                {
+                    MessageBox.Show("Ошибка сохранения изображения");
+                    
+                }
+            }
+        }
+
         private void Form1_Paint(object sender, PaintEventArgs e)
         {
 
